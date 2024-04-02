@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup Page</title>
+    <style>
+        /* CSS Styles */
+        .container {
+            width: 1440px;
+            height: 1024px;
+            position: relative;
+            background: white;
+        }
+
+        .signup-container {
+            width: 655px;
+            height: 600px;
+            position: absolute;
+            left: 393px;
+            top: 78px;
+            mix-blend-mode: darken;
+            background: white;
+            border-radius: 50px;
+            border: 2px #0E4632 solid;
+            backdrop-filter: blur(4px);
+        }
+
+        .form-container {
+            width: 575px;
+            position: absolute;
+            left: 30px;
+            top: 100px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 16px;
+            font-family: Exo;
+            font-weight: 400;
+            color: #9D9D9D;
+        }
+
+        .form-group input {
+            width: 100%;
+            height: 40px;
+            border: 1px solid #9D9D9D;
+            border-radius: 4px;
+            padding: 5px 10px;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            height: 50px;
+            background: #0E4632;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            font-family: Exo;
+            font-style: italic;
+            font-weight: 700;
+            color: #12372A;
+        }
+
+        .login-link a {
+            color: #12372A;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HTML Structure -->
+    <div class="container">
+        <div class="signup-container">
+            <div class="form-container">
+              <div class="form-header">
+                <h2>Create Account</h2>
+              </div>
+                <form action="#" method="post" id="signup-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                </form>
+            <button onclick="window.location.href='/web_tech_project/public/pet1.html'" type="submit">Create Account</button>
+                <div class="login-link">
+                    <p>Already have an account? <a href="/web_tech_project/public/login.html" style="text-decoration: underline;">Login Here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
